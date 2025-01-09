@@ -25,12 +25,16 @@ git config user.email "project-specific-email@example.com"
 //Verify local settings:
 git config --list --local
 ```
-**Optional: View Configuration File**, to see the configuration files directly:
+**Change configuration For Multiple line commit**, through VS Code, NOT Vim:
   ```js
-  // Global file : 
-  git config --global --edit
- // Local file :
-  git config --local --edit
+  git config --list
+ // Then change core editor:
+  git config --global core.editor 'code --wait'
+  // Now we can just do this
+  git commit
+  // Terminal will pop open VS Code so we don't have to work with VIM
+  // Now we can just type a multiple line message, then click the checkmark and submit
+  
   ```
 
 
