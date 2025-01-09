@@ -1,19 +1,20 @@
 const { add, subtract, divide, multiply } = require("./math");
 
 describe("Math.js tests", () => {
-  it("should test  add  ", () => {
+
+  it("adds two numbers correctly", () => {
     expect(add(2, 2)).toBe(4);
   });
 
-  it("Should test subtract", () => {
+  it("subtracts two numbers correctly", () => {
     expect(subtract(2, 2)).toBe(0);
   });
 
-  it("Should test divide", () => {
+  it("divides two numbers correctly", () => {
     expect(divide(2, 2)).toBe(1);
   });
 
-  it("Should test multiply", () => {
+  it("multiplys two numbers correctly", () => {
     expect(multiply(2, 2)).toBe(4);
   });
 });

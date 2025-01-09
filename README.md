@@ -1,6 +1,38 @@
 npm install    
 npm test  ( to start the test )
 
+**Configure Git Identity** to ensure commits are properly attributed to you.
+```js
+// set your global username and email:
+git config --global user.name "Your Full Name"
+git config --global user.email "your-email@example.com"
+
+// Check if your details are correctly saved:
+git config --list 
+
+// should see something like this in the output:
+user.name=Your Full Name
+user.email=your-email@example.com
+```
+
+**Local vs. Global Configurations**
+- The `--global` flag applies these settings to all repositories on your system.
+- If you want to set a different identity for a specific project, navigate to that project folder and use:
+```js
+git config user.name "Project Specific Name"
+git config user.email "project-specific-email@example.com"
+
+//Verify local settings:
+git config --list --local
+```
+**Optional: View Configuration File**, to see the configuration files directly:
+  ```js
+  // Global file : 
+  git config --global --edit
+ // Local file :
+  git config --local --edit
+  ```
+
 
 To make a new branch  ( make sure there are some kind of file change )
 ```md
