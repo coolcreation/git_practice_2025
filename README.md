@@ -53,7 +53,7 @@ git push origin my-new-branch
 
 If trying to use the same branch name as one that has been deleted on github
 we can try these first, and if it's not updating we can reload vs code by going
-the the command palette and selecting "Reload Window."
+to the command palette and selecting "Reload Window."
 
 ```md
 git checkout main   ( switch to a different branch to delete current branch )
