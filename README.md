@@ -1,4 +1,5 @@
-npx jest  ( to start the test )
+npm install
+npm test  ( to start the test )
 
 
 To make a new branch  ( make sure there are some kind of file change )
